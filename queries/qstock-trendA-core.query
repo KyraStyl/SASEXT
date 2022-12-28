@@ -1,0 +1,5 @@
+PATTERN SEQ(Stock+ a[], Stock b)
+WHERE skip-till-any-match
+AND a.symbol = 0
+AND b.symbol = 0
+WITHIN 200

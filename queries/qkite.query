@@ -1,0 +1,5 @@
+PATTERN SEQ(Check+ a[], Check b)
+WHERE skip-till-any-match
+AND a[i].src = a[i-1].dst
+AND b.src = a[i].dst
+WITHIN 100

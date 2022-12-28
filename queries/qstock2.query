@@ -1,0 +1,6 @@
+PATTERN SEQ(Stock+ a[], Stock+ b[], Stock c)
+WHERE skip-till-any-match
+AND a[i].symbol = a[i-1].symbol
+AND b.symbol = a[i].symbol + 1
+AND c.symbol = b.symbol
+WITHIN 10

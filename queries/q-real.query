@@ -1,0 +1,5 @@
+PATTERN SEQ(AAPL a, AMZN b)
+WHERE skip-till-next-match
+AND a.open_price > 20
+AND b.open_price < 200
+WITHIN 10
